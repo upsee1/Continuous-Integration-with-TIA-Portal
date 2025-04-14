@@ -1,1 +1,15 @@
+name: Run Local .bat file
 
+on:
+  repository_dispatch:   # Triggered by a programmatic API call
+    types:
+      - trigger-from-pc  # Define a custom event type
+
+jobs:
+  run-bat-files:
+    runs-on: self-hosted  # Use the self-hosted runner (Windows PC)
+    steps:
+      # Run the first .bat file
+      - name: Run application test .bat file
+        run: |
+          C:\tools\StyleCheck_TestSuite.bat
