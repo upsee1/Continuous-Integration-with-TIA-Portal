@@ -12,4 +12,7 @@ jobs:
       # Run the first .bat file
       - name: Run application test .bat file
         run: |
+          C:\tools\ProjectExport.bat
+      - name: Run application test .bat file
+        run: |
           C:\tools\StyleCheck_TestSuite_safetyV19.bat
