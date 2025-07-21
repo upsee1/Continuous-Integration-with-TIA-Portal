@@ -16,6 +16,3 @@ jobs:
       - name: Run application test .bat file
         run: |
           C:\tools\StyleCheck_TestSuite_safetyV19.bat
-      - name: Run application test .ps1 file
-        run: |
-          C:\tools\updateRevision2.ps1
